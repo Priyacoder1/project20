@@ -9,7 +9,6 @@ function preload(){
   eat = loadAnimation("images/eat1.png","images/eat1.png","images/eat1.png","images/eat2.png","images/eat2.png","images/eat2.png");
   bath = loadAnimation("images/bath1.png","images/bath1.png","images/bath1.png","images/bath2.png","images/bath2.png","images/bath2.png");
  move = loadAnimation("images/move1.png","images/move1.png","images/move2.png","images/move2.png");
- 
 }
 
 function setup() {
@@ -34,16 +33,15 @@ function draw() {
   text("Left Arrow = Eating",20, 85);
   text("Right Arrow = Bathing",20, 100);
   text("m key = Moving",20, 115);
- 
-
+  
   /*edges=createEdgeSprites();
   astronautbounce.Off(edges);*/
 
   /*edges=createEdgeSprites();
   astronaut.BounceOff(edges);*/
 
-  edges=createEdgeSprites();
-  astronaut.bounceOff(edges);
+  /*edges=createEdgeSprites();
+  astronaut.bounceOff(edges);*/
 
   /*edges=createEdgeSprite();
   astronaut.bounceOff(edges);*/
@@ -88,13 +86,12 @@ function draw() {
     astronaut.velocityY = 1;
   }*/
 
-  if(keyDown("m")){
+  /*if(keyDown("m")){
     astronaut.addAnimation("moving", move);
     astronaut.changeAnimation("moving");
-    astronaut.y = 350;
     astronaut.velocityX = 0;
     astronaut.velocityY = 0;
-  }
+  }*/
 
   /*if(keyDown("m")){
     astronaut.changeAnimation("moving", move);
